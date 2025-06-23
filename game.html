@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>好きなゲーム紹介</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>好きなゲーム</h1>
+    </header>
+
+    <div class="sidediv">
+        <nav>
+          <ul class="ul">
+            <li class="li">
+              <p class="p">
+                <button class="button" onclick="window.location.href='home.html'">
+                  Home
+                </button>
+              </p>
+            </li>
+
+            <li class="li">
+              <p class="p">
+                <button
+                  class="button"
+                  onclick="window.location.href='music.html'"
+                >
+                  Music
+                </button>
+              </p>
+            </li>
+
+            <li class="li">
+              <p class="p">
+                <button
+                  class="button"
+                  onclick="window.location.href='movie.html'"
+                >
+                  Movie
+                </button>
+              </p>
+            </li>
+
+            <li class="li">
+              <p class="p">
+                <button class="button" onclick="window.location.href='hobby.html'">
+                  Hobby
+                </button>
+              </p>
+            </li>
+
+            <li class="li">
+              <p class="p">
+                <button class="button" onclick="window.location.href='food.html'">
+                  Food
+                </button>
+              </p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    <!-- Locomotive Scroll 必須加 data-scroll-container -->
+    <div data-scroll-container class="games-scroll-page">
+      <!-- 一個遊戲一個 section -->
+      <section class="game-section" style="background-image:url('image/game/dark souls.png')" data-scroll-section>
+        <div class="game-content" data-scroll data-scroll-speed="2">
+          <h2 class="game-title">Dark Souls</h2>
+          <p class="game-desc">高難易度と探索性が特徴のダークファンタジーRPG。篝火と死を繰り返す中で、世界の謎が少しずつ解き明かされていきます。</p>
+        </div>
+      </section>
+
+      <section class="game-section" style="background-image:url('image/game/bloodborne.png')" data-scroll-section>
+        <div class="game-content" data-scroll data-scroll-speed="2">
+          <h2 class="game-title">Bloodborne</h2>
+          <p class="game-desc">ゴシックホラーの世界観と高速なアクションが魅力の作品。病める街ヤーナムで繰り広げられる恐怖と謎が魅力です。</p>
+        </div>
+      </section>
+    
+      <section class="game-section" style="background-image:url('image/game/dark souls III.png')" data-scroll-section>
+        <div class="game-content" data-scroll data-scroll-speed="2">
+          <h2 class="game-title">Dark Souls III</h2>
+          <p class="game-desc">シリーズの集大成であり、洗練された操作感と壮大なボス戦で高い評価を受けています。</p>
+        </div>
+      </section>
+
+      <section class="game-section" style="background-image:url('image/game/sekiro.png')" data-scroll-section>
+        <div class="game-content" data-scroll data-scroll-speed="2">
+          <h2 class="game-title">SEKIRO</h2>
+          <p class="game-desc">史上最も血なまぐさい時代、戦国──連れ去られた皇子を奪還し、自らの左腕を斬り落とした侍への復讐を果たすため、孤独な忍びの戦いが始まる。</p>
+        </div>
+      </section>
+
+      <section class="game-section" style="background-image:url('image/game/elden ring.png')" data-scroll-section>
+        <div class="game-content" data-scroll data-scroll-speed="2">
+          <h2 class="game-title">Elden Ring</h2>
+          <p class="game-desc">オープンワールド型のソウルライクゲーム。広大な世界「狭間の地」を自由に探索できる革新的な体験です。</p>
+        </div>
+      </section>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scroll = new LocomotiveScroll({
+          el: document.querySelector('[data-scroll-container]'),
+          smooth: true
+        });
+      });
+    </script>
+  </body>
+</html>

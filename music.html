@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>好きな音楽紹介</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>好きな音楽</h1>
+    </header>
+    <div class="sidediv">
+      <nav>
+        <ul class="ul">
+          <li class="li">
+            <p class="p">
+              <button class="button" onclick="window.location.href='home.html'">
+                Home
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button
+                class="button"
+                onclick="window.location.href='movie.html'"
+              >
+                Movie
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button
+                class="button"
+                onclick="window.location.href='hobby.html'"
+              >
+                Hobby
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button class="button" onclick="window.location.href='game.html'">
+                Game
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button class="button" onclick="window.location.href='food.html'">
+                Food
+              </button>
+            </p>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="music-content">
+      <div class="music-list">
+        <div class="music-card-block">
+          <div class="music-card">
+            <img
+              src="image/music/Diabolical Fullmoon Mysticism.jpg"
+              alt="Immortal"
+            />
+          </div>
+          <div class="music-title">
+            <strong>Immortal:Diabolical Fullmoon Mysticism</strong>
+          </div>
+        </div>
+
+        <div class="music-card-block">
+          <div class="music-card">
+            <img
+              src="image/music/Infinity On High (Deluxe Edition).jpg"
+              alt="Fall out boy"
+            />
+          </div>
+          <div class="music-title">
+            <strong>Fall Out Boy:Infinity On High</strong>
+          </div>
+        </div>
+
+        <div class="music-card-block">
+          <div class="music-card">
+            <img src="image/music/Back In Black.jpg" alt="AC/DC" />
+          </div>
+          <div class="music-title"><strong>AC/DC:Back In Black</strong></div>
+        </div>
+
+        <div class="music-card-block">
+          <div class="music-card">
+            <img src="image/music/Americana.jpg" alt="The Offspring" />
+          </div>
+          <div class="music-title">
+            <strong>The Offspring:Americana</strong>
+          </div>
+        </div>
+
+        <div class="music-card-block">
+          <div class="music-card">
+            <img src="image/music/Day & Age.jpg" alt="The Killers" />
+          </div>
+          <div class="music-title"><strong>The Killers:Day & Age</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal-->
+    <div id="music-modal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content music-modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="music-modal-body">
+          <div class="music-modal-left">
+            <img class="modal-logo" src="" alt="band logo" />
+            <div class="modal-band-text">
+              <h2 class="modal-title"></h2>
+              <p class="modal-desc"></p>
+            </div>
+          </div>
+          <div class="music-modal-right">
+            <img class="modal-album" src="" alt="album cover" />
+            <div class="modal-gradient"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="movieModal.js"></script>
+</html>

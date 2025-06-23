@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>好きな食べ物紹介</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>好きな食べ物</h1>
+    </header>
+    <div class="sidediv">
+      <nav>
+        <ul class="ul">
+          <li class="li">
+            <p class="p">
+              <button class="button" onclick="window.location.href='home.html'">
+                Home
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button
+                class="button"
+                onclick="window.location.href='music.html'"
+              >
+                Music
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button
+                class="button"
+                onclick="window.location.href='movie.html'"
+              >
+                Movie
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button class="button" onclick="window.location.href='hobby.html'">
+                Hobby
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button class="button" onclick="window.location.href='game.html'">
+                Game
+              </button>
+            </p>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div data-scroll-container class="games-scroll-page">
+      <section class="game-section" style="background-image:url('image/food/beijing duck.jpg')" data-scroll-section>
+        <div class="game-content" data-scroll data-scroll-speed="2">
+          <h2 class="game-title">北京ダック</h2>
+          <p class="game-desc">北京を代表する伝統料理。パリパリに焼き上げた鴨肉を薄餅に包み、甜麺醤・ネギ・キュウリと一緒に食べます。見た目も華やかで、宴席料理としても人気です。</p>
+        </div>
+      </section>
+
+      <section class="game-section" style="background-image:url('image/food/zhajiangmian.jpg')" data-scroll-section>
+        <div class="game-content" data-scroll data-scroll-speed="2">
+          <h2 class="game-title">ジャージャン麺</h2>
+          <p class="game-desc">辛い肉味噌（炸醤）を、ゆでた麺と千切り野菜に絡めて食べる北京の庶民料理。家庭の味として親しまれており、混ぜる楽しさも魅力のひとつです。 </p>
+        </div>
+      </section>
+
+      <section class="game-section" style="background-image:url('image/food/huoguo.jpg')" data-scroll-section>
+        <div class="game-content" data-scroll data-scroll-speed="2">
+          <h2 class="game-title">北京火鍋</h2>
+          <p class="game-desc">銅鍋を使い、羊肉と野菜をあっさりしたスープで煮込む北京伝統の火鍋。ゴマだれにつけて食べるのが一般的で、寒い冬にぴったりの温かい料理です。</p>
+        </div>
+      </section>
+
+        <section class="game-section" style="background-image:url('image/food/daoxiangcun.jpg')" data-scroll-section>
+        <div class="game-content" data-scroll data-scroll-speed="2">
+          <h2 class="game-title">稲香村（いなこうそん）</h2>
+          <p class="game-desc">1895年に創業の北京を代表する南方系老舗菓子店ブランドです。月餅や桃酥（タオスー）、中華風パイ、餡入り蒸しパンなど600種類以上の点心を取り扱い、伝統の南方菓子文化を北京で広めた存在です </p>
+        </div>
+      </section>
+
+      <section class="game-section" style="background-image:url('image/food/doufunao.jpeg')" data-scroll-section>
+        <div class="game-content" data-scroll data-scroll-speed="2">
+          <h2 class="game-title">豆腐脳（とうふのう）</h2>
+          <p class="game-desc">やわらかいおぼろ豆腐に似た食感の朝食向けスナック）です。北方ではおかず系の塩味が主流で、醤油ベースの餡に羊肉やキノコ、ネギ、時にはザーサイを入れ、とろみがついて温かくして提供されます。</p>
+        </div>
+      </section>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scroll = new LocomotiveScroll({
+          el: document.querySelector('[data-scroll-container]'),
+          smooth: true
+        });
+      });
+    </script>
+  </body>
+</html>

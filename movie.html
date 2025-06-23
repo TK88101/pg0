@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>好きな映画紹介</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>好きな映画</h1>
+    </header>
+    <div class="sidediv">
+      <nav>
+        <ul class="ul">
+          <li class="li">
+            <p class="p">
+              <button class="button" onclick="window.location.href='home.html'">
+                Home
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button
+                class="button"
+                onclick="window.location.href='music.html'"
+              >
+                Music
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button
+                class="button"
+                onclick="window.location.href='hobby.html'"
+              >
+                Hobby
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button class="button" onclick="window.location.href='game.html'">
+                Game
+              </button>
+            </p>
+          </li>
+
+          <li class="li">
+            <p class="p">
+              <button class="button" onclick="window.location.href='food.html'">
+                Food
+              </button>
+            </p>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="movie-content">
+      <div class="movie-list">
+        <div class="movie-card-block">
+          <div class="movie-card">
+            <img src="image/movie/a new hope 580x326 -  - 0007-06-16 16-16-33.png" alt="a new hope"/>
+          </div>
+          <div class="movie-title"><strong>Star Wars: A New Hope</strong></div>
+        </div>
+        <div class="movie-card-block">
+          <div class="movie-card">
+            <img src="image/movie/the empire strikes back 580x326.png" alt="empire strikes back"/>
+          </div>
+          <div class="movie-title"><strong>Star Wars: The Empire Strikes Back</strong></div>
+        </div>
+        <div class="movie-card-block">
+          <div class="movie-card">
+            <img src="image/movie/return of the jedi 580x326 -  - 0007-06-16 16-13-29.png" alt="return of the jedi"/>
+          </div>
+          <div class="movie-title"><strong>Star Wars: Return of the Jedi</strong></div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="movie-modal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="modal-video-wrapper">
+          <img class="modal-logo" src="" alt="logo" />
+          <div class="modal-video"></div>
+          <div class="modal-gradient"></div>
+        </div>
+        <div class="modal-text">
+          <h2 class="modal-title"></h2>
+          <p class="modal-desc"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="movieModal.js"></script>
+</html>
